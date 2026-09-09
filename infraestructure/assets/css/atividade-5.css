@@ -1,0 +1,47 @@
+:root {
+    --verde-principal: #707651;
+    --verde-secundario: #A2A884;
+    --bege: #D3CBB7;
+    --fundo: #EBE6E0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--fundo);
+    color: var(--verde-principal);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background-color: var(--bege);
+    border-radius: 15px;
+}
+
+a {
+    color: var(--verde-principal);
+    font-weight: 600;
+}
+
+h1 {
+    color: var(--verde-principal);
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    color: var(--verde-principal);
+    font-size: 24px;
+}
+
+p {
+    color: #4f5540;
+    font-size: 16px;
+    line-height: 1.7;
+}
