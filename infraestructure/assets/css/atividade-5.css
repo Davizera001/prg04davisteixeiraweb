@@ -1,5 +1,5 @@
 /* =========================================================
-   Variáveis da paleta
+   VARIÁVEIS DA PALETA
    ========================================================= */
 
 :root {
@@ -12,7 +12,7 @@
 
 
 /* =========================================================
-   Configurações gerais
+   CONFIGURAÇÕES GERAIS
    ========================================================= */
 
 * {
@@ -33,50 +33,126 @@ body {
 
 
 /* =========================================================
-   Container principal
+   HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+
+    margin: 0;
+    padding: 40px 20px;
+
+    background-color: var(--bege);
+
+    border-bottom: 2px solid var(--verde-secundario);
+
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+
+    color: var(--verde-principal);
+
+    font-size: 36px;
+}
+
+header p {
+    margin: 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   NAVEGAÇÃO
+   ========================================================= */
+
+nav {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 20px auto 30px;
+    padding: 15px 20px;
+
+    background-color: var(--verde-principal);
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+
+    margin: 5px 10px;
+    padding: 8px 12px;
+
+    color: white;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   PSEUDO-CLASSE :hover
+   ========================================================= */
+
+nav a:hover {
+    background-color: var(--verde-secundario);
+
+    color: var(--texto);
+}
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
    ========================================================= */
 
 main {
-    max-width: 1000px;
     width: 90%;
+    max-width: 1000px;
 
-    margin: 40px auto;
+    margin: 0 auto 30px;
     padding: 40px;
 
     background-color: var(--bege);
 
+    border: 2px solid var(--verde-secundario);
     border-radius: 15px;
 }
 
 
 /* =========================================================
-   Títulos
+   SEÇÕES
    ========================================================= */
 
-h1 {
-    color: var(--verde-principal);
-
-    text-align: center;
-
-    font-size: 36px;
-
-    margin-bottom: 40px;
+section {
+    margin-bottom: 35px;
 }
 
-h2 {
+section:last-child {
+    margin-bottom: 0;
+}
+
+section > h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
     color: var(--verde-principal);
 
-    font-size: 24px;
-
-    margin-top: 30px;
+    font-size: 26px;
 }
 
 
 /* =========================================================
-   Textos
+   TEXTOS
    ========================================================= */
 
-p {
+section p {
     color: var(--texto);
 
     font-size: 16px;
@@ -86,22 +162,7 @@ p {
 
 
 /* =========================================================
-   Link
-   ========================================================= */
-
-a {
-    color: var(--verde-principal);
-
-    font-weight: 600;
-}
-
-a:hover {
-    color: var(--verde-secundario);
-}
-
-
-/* =========================================================
-   Paleta de cores
+   PALETA DE CORES
    ========================================================= */
 
 .paleta-container {
@@ -118,41 +179,41 @@ a:hover {
 
 
 /* =========================================================
-   Cartão de cada cor
+   CARTÕES DAS CORES
    ========================================================= */
 
 .cartao-cor {
-    background-color: var(--fundo);
+    flex: 1 1 200px;
 
     padding: 15px;
 
-    border-radius: 10px;
+    background-color: var(--fundo);
 
-    flex: 1 1 200px;
+    border-radius: 10px;
 
     color: var(--texto);
 
     text-align: center;
 
-    box-shadow: 0px 4px 10px rgba(79, 85, 64, 0.25);
+    box-shadow: 0 4px 10px rgba(79, 85, 64, 0.25);
 }
 
 
 /* =========================================================
-   Quadrado que representa a cor
+   BLOCO DE COR
    ========================================================= */
 
 .cor-bloco {
     height: 150px;
 
-    border-radius: 8px;
-
     margin-bottom: 15px;
+
+    border-radius: 8px;
 }
 
 
 /* =========================================================
-   Cores dos quadrados
+   CORES DOS BLOCOS
    ========================================================= */
 
 .verde-principal {
@@ -175,37 +236,68 @@ a:hover {
 
 
 /* =========================================================
-   Código hexadecimal
+   CÓDIGO HEXADECIMAL
    ========================================================= */
 
 .hex-code {
-    color: var(--verde-principal);
+    margin: 5px 0;
 
-    font-weight: bold;
+    color: var(--verde-principal);
 
     font-size: 18px;
 
-    margin: 5px 0;
+    font-weight: bold;
 }
 
 
 /* =========================================================
-   Descrição das cores
+   DESCRIÇÃO DAS CORES
    ========================================================= */
 
 .desc {
     color: var(--texto);
+
     font-size: 14px;
+
     line-height: 1.5;
+
     text-align: center;
 }
 
+
 /* =========================================================
-   Link de volta
+   FOOTER
    ========================================================= */
 
-.texto-centralizado {
-    text-align: center;
+footer {
+    width: 90%;
+    max-width: 1000px;
 
-    margin-top: 30px;
+    margin: 0 auto 30px;
+    padding: 20px;
+
+    background-color: var(--verde-principal);
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SELEÇÃO DE TEXTO
+   ========================================================= */
+
+::selection {
+    background-color: var(--verde-secundario);
+
+    color: var(--texto);
 }
