@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../assets/icons/icone-tree.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/login-admin.css">
+
+    <title>Login - Espaço de Psicologia</title>
+</head>
+
+<body>
+
+    <header class="pagina-header">
+
+        <h1>Espaço de Psicologia</h1>
+
+        <p>Acesso ao painel administrativo</p>
+
+    </header>
+
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <h2>Login</h2>
+
+            <p class="login-descricao">
+                Informe seus dados para acessar o painel administrativo.
+            </p>
+
+
+            <form id="login-form">
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value="davitestando@gmail.com"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        value="12345678"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <p id="mensagem-erro" class="mensagem-erro"></p>
+
+
+                <button type="submit" class="botao-principal">
+                    Entrar
+                </button>
+
+
+                <a href="index.html" class="botao-voltar">
+                    Voltar para o início
+                </a>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Espaço de Psicologia — Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="../assets/js/login.js"></script>
+
+</body>
+
+</html>

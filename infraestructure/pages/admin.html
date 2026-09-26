@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../assets/icons/icone-tree.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/login-admin.css">
+
+    <title>Painel Administrativo</title>
+
+</head>
+
+<body>
+
+    <header class="pagina-header">
+
+        <h1>Espaço de Psicologia</h1>
+
+        <p>Painel Administrativo</p>
+
+    </header>
+
+
+    <main class="admin-container">
+
+        <section class="admin-card">
+
+            <div class="admin-topo">
+
+                <div>
+
+                    <h2>Usuários cadastrados</h2>
+
+                    <p>
+                        Lista de usuários do sistema.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="botao-novo"
+                    id="botao-novo">
+
+                    + Novo usuário
+
+                </button>
+
+            </div>
+
+
+            <div class="busca">
+
+                <label for="buscar">
+                    Pesquisar usuário
+                </label>
+
+                <input
+                    type="search"
+                    id="buscar"
+                    placeholder="Digite nome ou e-mail..."
+                >
+
+            </div>
+
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Ações</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="lista-usuarios">
+
+                        <tr>
+
+                            <td>1</td>
+                            <td>Ana Silva</td>
+                            <td>ana@email.com</td>
+
+                            <td class="acoes">
+
+                                <button
+                                    type="button"
+                                    class="botao-editar">
+                                    Editar
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="botao-excluir">
+                                    Excluir
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>2</td>
+                            <td>Bruno Santos</td>
+                            <td>bruno@email.com</td>
+
+                            <td class="acoes">
+
+                                <button
+                                    type="button"
+                                    class="botao-editar">
+                                    Editar
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="botao-excluir">
+                                    Excluir
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>3</td>
+                            <td>Carla Oliveira</td>
+                            <td>carla@email.com</td>
+
+                            <td class="acoes">
+
+                                <button
+                                    type="button"
+                                    class="botao-editar">
+                                    Editar
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="botao-excluir">
+                                    Excluir
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>4</td>
+                            <td>Daniel Souza</td>
+                            <td>daniel@email.com</td>
+
+                            <td class="acoes">
+
+                                <button
+                                    type="button"
+                                    class="botao-editar">
+                                    Editar
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="botao-excluir">
+                                    Excluir
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>5</td>
+                            <td>Fernanda Lima</td>
+                            <td>fernanda@email.com</td>
+
+                            <td class="acoes">
+
+                                <button
+                                    type="button"
+                                    class="botao-editar">
+                                    Editar
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="botao-excluir">
+                                    Excluir
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="admin-voltar">
+
+                <a href="index.html">
+                    Voltar para o início
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Espaço de Psicologia — Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="../assets/js/admin.js"></script>
+
+</body>
+
+</html>
